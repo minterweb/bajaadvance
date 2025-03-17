@@ -4,25 +4,82 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link href="project-1-styles.css" rel="stylesheet" type="text/css">
+        <link href="index-styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-    <header id="top">
+    <header>
         <nav>
-            <h1><a href="#showcase">Andrea De Jesus</a></h1> <!-- main navigation header -->
-            <label for="menu-toggle" class="menu-label">Menu ☰</label> <!-- label for the menu toggle -->
+            <h1></h1><!-- main navigation header -->
+            <label for="menu-toggle" class="menu-label">MENU ☰</label> <!-- label for the menu toggle -->
             <input type="checkbox" id="menu-toggle"> <!-- checkbox to toggle menu visibility -->
             <ul class="menu-content">
-                <li><a href="#skills">SKILLS</a></li> <!-- skills link -->
-                <li><a href="#portfolio">PORTFOLIO</a></li> <!-- portfolio link -->
-                <li><a href="#about">ABOUT</a></li> <!-- about link -->
-                <li><a href="#cv">CURRICULUM VITAE</a></li> <!-- CV link -->
-                <li><a href="#contact">CONTACT</a></li> <!-- contact link -->
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li> <!-- skills link -->
+                <li><a href="#paquetes">PAQUETES</a></li> <!-- about link -->
+                <li><a href="#contacto">CONTACTO</a></li> <!-- CV link -->
             </ul>
         </nav>
     </header>
-        <section id="hero">
-            <h1>Andrea De Jesus</h1> <!-- hero section title -->
-            <h2>INFORMATION AND COMPUTER SYSTEMS STUDENT</h2> <!-- hero section subtitle -->
-            <a href="#skills">TELL ME MORE</a> <!-- link to skills section -->
+        <section id="inicio">
+            <h2>¡LLEVAMOS TU NEGOCIO AL SIGUIENTE NIVEL!</h2> <!-- hero section title -->
+            <h1>BAJA ADVANCE</h1> <!-- hero section subtitle -->
+            <a href="#paquetes">NUESTROS PAQUETES</a> <!-- link to skills section -->
         </section>
+        <section id="nosotros">
+            <div class="nos-container">
+                <div id="nos-left">
+                    <h2>AGENCIA DE MARKETING DIGITAL</h2>
+                    <h3>Escalamos tu negocio mediante campañas estratégicas que implementan anuncios pagados en Meta.</h3>
+                </div>
+                <div id="nos-box">
+                    <p>Somos una agencia 100% sudcaliforniana, enfocados en cumplir los objetivos y expectativas de tu negocio, el monitoreo y optimizacón de anuncios para así lograr un mayor alcance a tu público y un avance garantizado.</p>
+                    <a href="https://wa.link/xk2s02">CONTÁCTANOS</a>
+                </div>
+            </div>
+        </section>
+        <section id="paquetes">
+            <h2>Nuestros paquetes están especializados para cumplir con tu propósito en mente. ¡Echa un vistazo a nuestras opciones y elige la que mejor se adapte a tu objetvio!</h2>
+            <div class="packs-container">
+                <div class="packs-box">
+                    <a href="esencial.html">
+                        <img src="esencial.jpeg">
+                    </a>
+                    <h3>ESENCIAL</h3>
+                    <p>Perfecto para negocios que desean iniciar sin una gran inversón.</p>
+                </div>
+                <div class="packs-box">
+                    <a href="avanzado.html">
+                        <img src="avanzado.jpeg">
+                    </a>
+                    <h3>AVANZADO</h3>
+                    <p>Perfceto para negocios que desean escalar con estrategias avanzadas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+                <div class="contacto-container">
+                    <h2>CONTÁCTANOS</h2>
+                <ul class="social-media">
+                    <li><span class="fa-stack fa-1x">
+                          <i class="fa-solid fa-circle fa-stack-2x"></i>
+                          <i class="fa-solid fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+                     </span><a href="https://www.facebook.com/share/18WZgKbbLy/?mibextid=wwXIfr">Baja Advance</a></li>
+                    <li><span class="fa-stack fa-1x">
+                          <i class="fa-solid fa-circle fa-stack-2x"></i>
+                          <i class="fa-solid fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+                     </span><a href="https://www.instagram.com/advancebajamx?igsh=MXpqMXJsNHlnMDY4">advancebajamx</a></li>
+                    <li><span class="fa-stack fa-1x">
+                          <i class="fa-solid fa-circle fa-stack-2x"></i>
+                          <i class="fa-solid fa-brands fa-whatsapp fa-stack-1x fa-inverse"></i>
+                     </span><a href="https://wa.link/xk2s02">(612)-151-1499</a></li>
+                </ul>
+                    <div class="conts-link">
+                        <a href="https://wa.link/xk2s02">CONTÁCTANOS</a>
+                    </div>
+                    <div class="loc">
+                       <h3><i class="fa-solid fa-location-dot"></i>La Paz, BCS, México.</h3>
+                    </div>
+              </div>
+        </section>
+    </body>
+</html>

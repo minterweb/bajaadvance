@@ -1,0 +1,507 @@
+/*Baja Advance CSS*/
+body {
+    margin: 0; /*Reset margin to 0*/
+    padding: 0; /*Reset padding to 0*/
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C0C0C0;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    right: 1px;
+}
+#menu-toggle {
+    display: none; /*to not display it until it´s checked*/
+}
+/*the menu button*/
+.menu-label {
+    font-size: 15px;
+    font-family: Lucida Console, monospace;
+    cursor: pointer;
+    color: #ffffff;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+/* Hover effect on the menu label */
+.menu-label:hover {
+    background-color: #A9A9A9; /* Change background color on hover */
+    transform: translateY(-4px); /* Slight rotation effect on hover */
+}
+/*the list of the menu*/
+.menu-content {
+    list-style: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    margin-top: 250px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+    font-family: "Gil Sans", sans-serif;
+    background-color: #C0C0C0;
+}
+/* to see the content when ckecked */
+#menu-toggle:checked ~ .menu-content {
+    display: flex;
+    opacity: 1; /* Make menu visible */
+}
+/* Navigation Menu Links (Hover Effects) */
+.menu-content li {
+    text-align: left;
+    margin-left: 20px;
+}
+.menu-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, padding-left 0.3s ease; /* Transition for background and padding */
+}
+/* Hover effect on menu links */
+.menu-content a:hover {
+    background-color: #A9A9A9;
+    padding-left: 20px; /* Indent the link on hover */
+}
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+#inicio a {
+    display: flex;
+    background-color: #191970;
+    padding: 25px;
+    font-family: "Gil Sans", sans-serif;
+    font-size: 18px; /* small text for the link */
+    color: #ffffff;
+    text-decoration: none;   
+    border-radius: 4.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+/* Hover effect on the menu label */
+#inicio a:hover {
+    background-color: #DEB887; /* Change background color on hover */
+    transform: translateY(-6px); 
+}
+#inicio > h1 {
+    font-family: "Gil Sans", sans-serif; 
+    font-size: 45px; /* moderate heading size */
+}
+#inicio > h2 { /* typewriter font for h2 */
+    font-family: "Gil Sans", sans-serif; 
+    font-size: 23px; /* bigger heading size */
+    padding: 0px 40px;
+    font-weight: 600;
+}
+#nosotros {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.nos-container {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#nos-left h2 {
+    font-family: "Gil Sans", sans-serif; 
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+#nos-left h3 {
+    font-family: "Gil Sans", sans-serif; 
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 70px;
+    color: #191970;
+}
+#nos-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#nos-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 45vh;
+    width: 90%;
+    background-image: url(fondo3.png);
+    border-radius: 15px;
+    padding: 50px 40px;
+}
+#nos-box p {
+    font-family: "Gil Sans", sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px #696969;
+    color: #ffffff;
+}
+#nos-box a {
+    display: flex;
+    background-color: #191970;
+    padding: 25px;
+    font-family: "Gil Sans", sans-serif;
+    font-size: 18px; /* small text for the link */
+    color: #ffffff;
+    text-decoration: none;   
+    border-radius: 4.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+/* Hover effect on the menu label */
+#nos-box a:hover {
+    background-color: #DEB887; /* Change background color on hover */
+    transform: translateY(-6px); 
+}
+#paquetes { 
+    padding: 70px;
+    background-color: #f4f4f4; /* light grey background */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#paquetes h2 {
+    font-family: "Gil Sans", sans-serif; 
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 70px; /* space below h3 */
+}
+/*the div that contains the boxes*/
+.packs-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px; /* adjust space between portfolio items */
+}
+/*portfolio boxes*/
+.packs-box {
+    background-color: #ffffff; /* white background for portfolio boxes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    text-align: center;
+    padding: 15px;
+    width: 100%; /* full width on small screens */
+    box-sizing: border-box;
+}
+.packs-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* rounded corners for images */
+}
+.packs-box h3 {
+    font-size: 24px;
+    font-family: Lucida Console, monospace;
+    font-weight: 100;
+}
+.packs-box p {
+    font-size: 16px;
+    color: #555; /* grey text for descriptions */
+    text-align: left; /* left-align text */
+    font-family: "Gil Sans", sans-serif; 
+    font-weight: 100;
+}
+.packs-box:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* more pronounced shadow on hover */
+}
+#contacto {
+    display: flex;
+    padding: 70px;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+}
+/* Center Headings */
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+.contacto-container h2 {
+    font-family: "Gil Sans", sans-serif; 
+    font-weight: 700;
+    font-size: 35px;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+.contacto-container h3 {
+    font-size: 15px;
+    font-family: Lucida Console, monospace;
+    font-weight: 100;
+}
+.social-media {
+    text-align: left;
+    list-style: none;
+}
+.social-media li {
+    font-size: 20px;
+}
+span {
+    margin: 10px 0px;
+    right: 20px;
+}
+.social-media a {
+    text-decoration: none;
+    font-family: "Gil Sans", sans-serif; 
+    font-size: 20px;
+    color: #000;
+    padding-right: 30px;
+}
+ .loc i {
+        padding-right: 10px;
+    }
+.conts-link a {
+    display: flex;
+    background-color: #191970;
+    padding: 25px;
+    font-family: "Gil Sans", sans-serif;
+    font-size: 18px; /* small text for the link */
+    color: #ffffff;
+    text-decoration: none;   
+    border-radius: 4.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+/* Hover effect on the menu label */
+.conts-link a:hover {
+    background-color: #DEB887; /* Change background color on hover */
+    transform: translateY(-6px); 
+}
+/* styles for tablet and desktop */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .menu-label {
+        display: none; /* hide menu button */
+    }
+    .menu-content {
+        margin-top: 15px;
+        display: flex !important; /* always show menu */
+        flex-direction: row; /* horizontal menu */
+        background: none;
+        opacity: 100%;
+        justify-content: flex-end;
+    }
+    .menu-content li {
+        padding-right: 20px;
+    }
+    #inicio a {
+        font-size: 18px;
+        padding: 30px;
+    }
+    #inicio h1 {
+        font-size: 55px;
+    }
+    #inicio h2 {
+        font-size: 28px;
+    }
+    #nos-left h2 {
+       font-size: 38px; 
+    }
+    #nos-left h3 {
+        font-size: 28px;
+    }
+    #nos-box p {
+        font-size: 34px;
+    }
+    #nos-box a {
+        font-size: 22px;
+        padding: 30px;
+    }
+    #paquetes h2 {
+        font-size: 35px;
+    }
+    .packs-container {
+        flex-direction: row; !important
+    }
+    .packs-box {
+        padding: 15px;
+        width: 50%; /* full width on small screens */
+    }
+    .packs-box h3 {
+        font-size: 30px;
+    }
+    .packs-box p {
+        font-size: 22px;
+    }
+    #contacto {
+        height: 30vh;
+        padding: 70px 0px;
+    }
+    /* Center Headings */
+    .contacto-container {
+        gap: 10px;
+    }
+    .contacto-container h2 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .contacto-container h3 {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .social-media li {
+        font-size: 20px;
+        width: 45%;
+        margin: 0px 30px;
+    }
+    .social-media a {
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    .conts-link a {
+        margin: 20px 0px;;
+        font-size: 18px;
+    }
+}
+/* styles for just desktop */
+@media (min-width: 992px) {
+    .menu-label {
+        display: none; /* hide menu button */
+    }
+    .menu-content {
+        margin-top: 15px;
+        display: flex !important; /* always show menu */
+        flex-direction: row; /* horizontal menu */
+        background: none;
+        opacity: 100%;
+        justify-content: flex-end;
+    }
+    .menu-content li {
+        padding-right: 20px;
+    }
+    #inicio a {
+        font-size: 18px;
+        padding: 30px;
+    }
+    #inicio h1 {
+        font-size: 55px;
+    }
+    #inicio h2 {
+        font-size: 28px;
+    }
+    #nosotros h2 {
+       font-size: 38px; 
+    }
+    #nosotros h3 {
+        font-size: 28px;
+    }
+    .nos-container {
+        flex-direction: row;
+    }
+    #nos-left {
+        width: 60%;
+        padding: 40px;
+        text-align: left;
+    }
+    #nos-box {
+        height: 60vh;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        overflow: scroll;
+    }
+    #nos-box p {
+        font-size: 40px;
+    }
+    #nos-box a {
+        font-size: 22px;
+        padding: 30px;
+    }
+    #nos-left h2 {
+       font-size: 40px;
+        margin-bottom: 18px;
+        padding-top: 30px;
+    }
+    #nos-left h3 {
+        font-size: 35px;
+    }
+    #paquetes h2 {
+        font-size: 35px;
+    }
+    .packs-container {
+        flex-direction: row; !important
+        gap: 0px;
+        justify-content: center;
+    }
+    .packs-box {
+        padding: 15px;
+        width: 30%; /* full width on small screens */
+    }
+    .packs-box h3 {
+        font-size: 30px;
+    }
+    .packs-box p {
+        font-size: 22px;
+    }
+    #contacto {
+        height: 30vh;
+        padding: 70px 0px;
+    }
+    .contacto-container {
+        gap: 10px;
+    }
+    .contacto-container h2 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .contacto-container h3 {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .social-media li {
+        font-size: 30px;
+        width: 45%;
+        margin: 0px 30px;
+    }
+    .social-media a {
+        padding-right: 0px;
+        font-size: 25px;
+    }
+    .conts-link a {
+        margin: 20px 0px;;
+        font-size: 18px;
+    }
+}
+}
